@@ -1,0 +1,4047 @@
+{
+    "NIKE": {
+      "label": "Nike",
+      "template_path": "templates/nike.png",
+      "output_prefix": "final/nike",
+      "fields": [
+        {
+          "id": "desc",
+          "label": "Description du produit",
+          "placeholder": "ex: AIR JORDAN 4 RETRO WHITE OREO"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 140"
+        },
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 03/07/2024"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_text",
+          "value": "FR{randint:1000000000:9999999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -203,
+            "y": 93,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "CDD{randint:100000000:999999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -203,
+            "y": 105,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "date",
+          "position": {
+            "mode": "center_offset",
+            "x": -203,
+            "y": 153,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "date",
+          "position": {
+            "mode": "center_offset",
+            "x": -203,
+            "y": 177,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": 120,
+            "y": 90,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": 120,
+            "y": 150,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "DM{randint:1000:9999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -339,
+            "y": 347,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 30,
+          "position": {
+            "mode": "center_offset",
+            "x": -202,
+            "y": 347,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{qte},00\n\n\n{qte}",
+          "position": {
+            "mode": "center_offset",
+            "x": -8,
+            "y": 357,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix},99 €\n\n\n0,00 €",
+          "position": {
+            "mode": "center_offset",
+            "x": 45,
+            "y": 357,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix_ht},99 €\n\n\n0,00 €",
+          "computed_fields": {
+            "prix_ht": "int(float(prix) / 1.20)"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 175,
+            "y": 357,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix},99 €\n\n\n0,00 €",
+          "position": {
+            "mode": "center_offset",
+            "x": 240,
+            "y": 357,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix},99 €\n{tva:.0f},00 €\n\n{prix},99 €\n\n{prix},00 €",
+          "computed_fields": {
+            "tva": "float(prix) - float(prix) / 1.2"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 297,
+            "y": 699,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "Total Hors TVA:\nTVA:\n\nMontant Total de la Facture:\n\nMode(s) de Paiement:                 Carte de Crédit",
+          "position": {
+            "mode": "center_offset",
+            "x": -20,
+            "y": 699,
+            "scale": 2
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            54,
+            54,
+            54
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "LOUIS_VUITTON_1": {
+      "label": "Louis Vuitton",
+      "template_path": "templates/lv_1.png",
+      "output_prefix": "final/lv",
+      "fields": [
+        {
+          "id": "num_art",
+          "label": "Numéro d'article",
+          "placeholder": "ex: 1A9QI1"
+        },
+        {
+          "id": "nom_art",
+          "label": "Nom de l'article",
+          "placeholder": "ex: KEEPALL BANDOULIERE 50"
+        },
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 1850"
+        }
+      ],
+      "layers": [
+        {
+          "type": "field",
+          "field": "num_art",
+          "position": {
+            "mode": "center_offset",
+            "x": -1500,
+            "y": 1637
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 55,
+          "color": [
+            8,
+            9,
+            11
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "nom_art",
+          "wrap_at": 26,
+          "position": {
+            "mode": "center_offset",
+            "x": -1200,
+            "y": 1637
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 55,
+          "color": [
+            8,
+            9,
+            11
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "qte",
+          "position": {
+            "mode": "center_offset",
+            "x": -200,
+            "y": 1637
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 55,
+          "color": [
+            8,
+            9,
+            11
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix},00",
+          "position": {
+            "mode": "center_offset",
+            "x": 500,
+            "y": 1637
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 55,
+          "color": [
+            8,
+            9,
+            11
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix},00",
+          "position": {
+            "mode": "center_offset",
+            "x": 1270,
+            "y": 1637
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 55,
+          "color": [
+            8,
+            9,
+            11
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix},00      EUR\n\n{prix},00      EUR\n\n\n            0,00  EUR",
+          "position": {
+            "mode": "center_offset",
+            "x": 1180,
+            "y": 1880
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 55,
+          "color": [
+            8,
+            9,
+            11
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "0{randint:10000:99999}/0{randint:10000:99999}                                                       {randint:10:28}/{randint:1:9}/20{randint:20:23} - {randint:10:23}:{randint:10:59}",
+          "position": {
+            "mode": "center_offset",
+            "x": -580,
+            "y": 1410
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 55,
+          "color": [
+            8,
+            9,
+            11
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "BURBERRY": {
+      "label": "Burberry",
+      "template_path": "templates/burberry.png",
+      "output_prefix": "final/burberry",
+      "fields": [
+        {
+          "id": "num",
+          "label": "Numéro de commande",
+          "placeholder": "ex: 123456789"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: TRENCH COAT"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 2200"
+        },
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        }
+      ],
+      "layers": [
+        {
+          "type": "field",
+          "field": "num",
+          "position": {
+            "mode": "center_offset",
+            "x": -348,
+            "y": 397
+          },
+          "font": "calibri-font-family/LibreBaskerville-Bold.ttf",
+          "size": 13,
+          "color": [
+            27,
+            27,
+            27
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{num}                  {randint:10:28}/0{randint:1:9}/{randint:2020:2023} - {randint:10:23} : {randint:10:59}",
+          "position": {
+            "mode": "center_offset",
+            "x": -138,
+            "y": 332
+          },
+          "font": "calibri-font-family/LibreBaskerville-Bold.ttf",
+          "size": 15,
+          "color": [
+            27,
+            27,
+            27
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 16,
+          "position": {
+            "mode": "center_offset",
+            "x": -275,
+            "y": 392
+          },
+          "font": "calibri-font-family/LibreBaskerville-Bold.ttf",
+          "size": 13,
+          "color": [
+            27,
+            27,
+            27
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{qte}                     {ht:.3f}       20.00%      {tva:.2f}         {ht:.3f}                 {prix}.00",
+          "computed_fields": {
+            "ht": "float(prix)*0.833",
+            "tva": "float(prix)-float(prix)*0.833"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": -125,
+            "y": 397
+          },
+          "font": "calibri-font-family/LibreBaskerville-Bold.ttf",
+          "size": 13,
+          "color": [
+            27,
+            27,
+            27
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "TOTAL H.T :                                       EUR\nTOTAL TVA :                                     EUR\nTOTAL TTC :                                     EUR\n\n                                                                      EUR\n\n                                                                      EUR",
+          "position": {
+            "mode": "center_offset",
+            "x": 75,
+            "y": 474
+          },
+          "font": "calibri-font-family/LibreBaskerville-Bold.ttf",
+          "size": 13,
+          "color": [
+            24,
+            24,
+            24
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.3f}\n{tva:.2f}\n{prix}.00\n\n{prix}.00\n\n0.00",
+          "computed_fields": {
+            "ht": "float(prix)*0.833",
+            "tva": "float(prix)-float(prix)*0.833"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 218,
+            "y": 474
+          },
+          "font": "calibri-font-family/LibreBaskerville-Bold.ttf",
+          "size": 13,
+          "color": [
+            27,
+            27,
+            27
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "Vendeur :             {random_prenom} {random_letter}.\nENC CB{randint:10:99}",
+          "position": {
+            "mode": "center_offset",
+            "x": -352,
+            "y": 715
+          },
+          "font": "calibri-font-family/LibreBaskerville-Bold.ttf",
+          "size": 11,
+          "color": [
+            27,
+            27,
+            27
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "GUCCI": {
+      "label": "Gucci",
+      "template_path": "templates/gucci.png",
+      "output_prefix": "final/gucci",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 15/06/2024"
+        },
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "sku",
+          "label": "SKU",
+          "placeholder": "ex: 681083"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: GG MARMONT MATELASSE SHOULDER BAG"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 1350"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_text",
+          "value": "{randint:10000:99999}",
+          "position": {
+            "mode": "center_offset",
+            "x": 35,
+            "y": 320
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 20,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{qte}     {sku}                   {prix}.00                  {prix}.00               {random_prenom}",
+          "position": {
+            "mode": "center_offset",
+            "x": -304,
+            "y": 542
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 16,
+          "position": {
+            "mode": "center_offset",
+            "x": -267,
+            "y": 562
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "Boutique 00{randint:1:4}:\n{date} :\nCaisseur :\nClient :",
+          "position": {
+            "mode": "center_offset",
+            "x": 100,
+            "y": 370
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 18,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "C #. {randint:1:3}\n{randint:10:18}:{randint:10:59}:{randint:10:59}\n{random_prenom}\nLOCAL",
+          "position": {
+            "mode": "center_offset",
+            "x": 260,
+            "y": 370
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f}\n{tva:.2f}\n{prix}.00",
+          "computed_fields": {
+            "ht": "float(prix) - float(prix)*0.166",
+            "tva": "float(prix)*0.166"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 267,
+            "y": 625
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:10:50}.00\n{randint:10:90}.00",
+          "position": {
+            "mode": "center_offset",
+            "x": 267,
+            "y": 733
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -320,
+            "y": 840
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "STUSSY": {
+      "label": "Stüssy",
+      "template_path": "templates/stussy.png",
+      "output_prefix": "final/stussy",
+      "fields": [
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "sku",
+          "label": "SKU",
+          "placeholder": "ex: 1904685"
+        },
+        {
+          "id": "item_name",
+          "label": "Nom de l'article",
+          "placeholder": "ex: SS Link Hoodie"
+        }
+      ],
+      "layers": [
+        {
+          "type": "field",
+          "field": "qte",
+          "position": {
+            "mode": "center_offset",
+            "x": 200,
+            "y": 340
+          },
+          "font": "calibri-font-family/Calibri-bold.ttf",
+          "size": 15,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "sku",
+          "position": {
+            "mode": "center_offset",
+            "x": -305,
+            "y": 340
+          },
+          "font": "calibri-font-family/Calibri-bold.ttf",
+          "size": 15,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "item_name",
+          "wrap_at": 14,
+          "position": {
+            "mode": "center_offset",
+            "x": -70,
+            "y": 340
+          },
+          "font": "calibri-font-family/Calibri-bold.ttf",
+          "size": 15,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -315,
+            "y": 190
+          },
+          "font": "calibri-font-family/Calibri-Bold.ttf",
+          "size": 14,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "0{randint:1:9}/0{randint:1:9}/{randint:2021:2023}",
+          "position": {
+            "mode": "center_offset",
+            "x": 70,
+            "y": 187
+          },
+          "font": "calibri-font-family/Calibri-Bold.ttf",
+          "size": 14,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "#{randint:100000:999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": 190,
+            "y": 221
+          },
+          "font": "calibri-font-family/Calibri-Bold.ttf",
+          "size": 14,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:1000000000:9999999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": 124,
+            "y": 237
+          },
+          "font": "calibri-font-family/Calibri-Bold.ttf",
+          "size": 14,
+          "color": [
+            80,
+            80,
+            80
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "PRADA": {
+      "label": "Prada",
+      "template_path": "templates/Prada_1.png",
+      "output_prefix": "final/prada",
+      "fields": [
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "article",
+          "label": "Nom de l'article",
+          "placeholder": "ex: Re-Nylon backpack"
+        },
+        {
+          "id": "sku",
+          "label": "SKU",
+          "placeholder": "ex: 2VZ135"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 1450"
+        }
+      ],
+      "layers": [
+        {
+          "type": "field",
+          "field": "qte",
+          "position": {
+            "mode": "center_offset",
+            "x": -110,
+            "y": 378
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 13,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{article} {sku}",
+          "wrap_at": 20,
+          "position": {
+            "mode": "center_offset",
+            "x": -350,
+            "y": 378
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 13,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{ht:.2f}                                                  €{prix}.00                        €{prix}.00",
+          "computed_fields": {
+            "ht": "float(prix)*0.8333333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": -35,
+            "y": 378
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 13,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "1-{randint:10000000:99999999}\n{randint:10:29}/0{randint:1:9}/{randint:2020:2023}\n{randint:10000:99999}\n{randint:1:8}",
+          "position": {
+            "mode": "center_offset",
+            "x": -205,
+            "y": 198
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 12,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "                  B{randint:1000:9999}B{randint:10:99}Y\n\nT{randint:1000000000000:9999999999999}\nPOS SW Version 17.0.1.0.103",
+          "position": {
+            "mode": "center_offset",
+            "x": 174,
+            "y": 214
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 12,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{ht:.2f}\n€{tva:.2f}\n€{prix}.00",
+          "computed_fields": {
+            "ht": "float(prix)*0.833333",
+            "tva": "float(prix) - float(prix)*0.833333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": -158,
+            "y": 835
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 12,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{qte}\n{qte}\n€{prix}.00\n€{prix}.00",
+          "position": {
+            "mode": "center_offset",
+            "x": 270,
+            "y": 835
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 12,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "SUPREME": {
+      "label": "Supreme",
+      "template_path": "templates/Supreme-1.png",
+      "output_prefix": "final/supreme",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date d'expédition",
+          "placeholder": "ex: 01/12/2024"
+        },
+        {
+          "id": "url",
+          "label": "URL image produit",
+          "placeholder": "ex: https://..."
+        },
+        {
+          "id": "article",
+          "label": "Nom de l'article",
+          "placeholder": "ex: Supreme Box Logo Hoodie"
+        },
+        {
+          "id": "couleur",
+          "label": "Couleur / Style",
+          "placeholder": "ex: Black"
+        },
+        {
+          "id": "taille",
+          "label": "Taille",
+          "placeholder": "ex: L"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 380"
+        }
+      ],
+      "layers": [
+        {
+          "type": "formula",
+          "formula": "{article}\nStyle   :   {couleur}\nSize   :   {taille}",
+          "wrap_field": "article",
+          "wrap_at": 36,
+          "position": {
+            "mode": "center_offset",
+            "x": -325,
+            "y": 415
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 26,
+          "color": [
+            95,
+            95,
+            95
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{prix}",
+          "position": {
+            "mode": "center_offset",
+            "x": 430,
+            "y": 415
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 24,
+          "color": [
+            95,
+            95,
+            95
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": 122,
+            "y": 135
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 26,
+          "color": [
+            95,
+            95,
+            95
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "0{randint:6:7}{randint:10000000:99999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": 230,
+            "y": 225
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 26,
+          "color": [
+            95,
+            95,
+            95
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "Shipped:  {date}",
+          "position": {
+            "mode": "center_offset",
+            "x": -697,
+            "y": 260
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 26,
+          "color": [
+            95,
+            95,
+            95
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "Order . . #{randint:1000000:9999999}\n\n\n\n\nOrder Detail",
+          "position": {
+            "mode": "center_offset",
+            "x": -697,
+            "y": 220
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 26,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "Tracking Number:     {random_letter}{randint:1:9}{random_letter}{randint:100:999}{random_letter}{randint:1:9}{random_letter}{randint:1000000:9999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -697,
+            "y": 820
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 24,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "Subtotal:\nShipping:\nVAT:\nTotal:",
+          "position": {
+            "mode": "center_offset",
+            "x": 290,
+            "y": 595
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 26,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "      €{subtotal:.2f}\n       €14.88\n€{vat:.2f}\n €{prix}",
+          "computed_fields": {
+            "subtotal": "float(prix) - float(prix)*0.16666 - 14.88",
+            "vat": "float(prix)*0.16666"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 360,
+            "y": 595
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 26,
+          "color": [
+            95,
+            95,
+            95
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "TST": {
+      "label": "Stone Island",
+      "template_path": "templates/stone islande.png",
+      "output_prefix": "final/stone_island",
+      "fields": [
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "article",
+          "label": "Nom de l'article",
+          "placeholder": "ex: COMPASS PATCH SWEATSHIRT"
+        },
+        {
+          "id": "cat",
+          "label": "Catégorie / Taille",
+          "placeholder": "ex: L"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 320"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_text",
+          "value": "N. {randint:100000:999999} {randint:10:29}-0{randint:1:9}-{randint:2021:2023} {randint:10:17}:{randint:10:59}:{randint:10:59}",
+          "position": {
+            "mode": "center_offset",
+            "x": -400,
+            "y": 1700
+          },
+          "font": "calibri-font-family/arial.ttf",
+          "size": 55,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{article}\n{qte}x{cat}",
+          "position": {
+            "mode": "center_offset",
+            "x": -620,
+            "y": 1850
+          },
+          "font": "calibri-font-family/arial.ttf",
+          "size": 50,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix}.00\n\n\n\n\n\n\n\n\n\n{prix}.00",
+          "position": {
+            "mode": "center_offset",
+            "x": 450,
+            "y": 1900
+          },
+          "font": "calibri-font-family/arial.ttf",
+          "size": 50,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "\n                                      {prix}.00\nOf wich VAT 21% Euro : {vat:.2f}",
+          "computed_fields": {
+            "vat": "float(prix)*0.1723"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": -350,
+            "y": 2050
+          },
+          "font": "calibri-font-family/arial_bold.ttf",
+          "size": 58,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{random_carte}",
+          "position": {
+            "mode": "center_offset",
+            "x": -620,
+            "y": 2400
+          },
+          "font": "calibri-font-family/arial.ttf",
+          "size": 50,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{random_card_number}",
+          "position": {
+            "mode": "center_offset",
+            "x": -250,
+            "y": 2750
+          },
+          "font": "calibri-font-family/arial_bold.ttf",
+          "size": 45,
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "WTH": {
+      "label": "Wethenew",
+      "template_path": "templates/wethenew_1.png",
+      "output_prefix": "final/wethenew",
+      "fields": [
+        {
+          "id": "desc",
+          "label": "Description du produit",
+          "placeholder": "ex: Nike Air Force 1 Low White"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 150"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_text",
+          "value": "{randint:10:28}/0{randint:1:10}/{randint:21:23}\nInvoice for #{randint:10000:99999}",
+          "position": {
+            "mode": "center_offset",
+            "x": 210,
+            "y": 122
+          },
+          "font": "calibri-font-family/LiberationSans-Regular.ttf",
+          "size": 24,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 35,
+          "position": {
+            "mode": "center_offset",
+            "x": -287,
+            "y": 435
+          },
+          "font": "calibri-font-family/LiberationSans-Bold.ttf",
+          "size": 20,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{tva:.2f} TVA         €{prix:.2f}",
+          "computed_fields": {
+            "tva": "float(prix)*0.166666"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 130,
+            "y": 435
+          },
+          "font": "calibri-font-family/LiberationSans-Regular.ttf",
+          "size": 20,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 290,
+            "y": 615
+          },
+          "font": "calibri-font-family/LiberationSans-Regular.ttf",
+          "size": 25,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{tva:.2f}",
+          "computed_fields": {
+            "tva": "float(prix)*0.166666"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 300,
+            "y": 690
+          },
+          "font": "calibri-font-family/LiberationSans-Regular.ttf",
+          "size": 25,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 290,
+            "y": 760
+          },
+          "font": "calibri-font-family/LiberationSans-Bold.ttf",
+          "size": 25,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -395,
+            "y": 925
+          },
+          "font": "calibri-font-family/LiberationSans-Regular.ttf",
+          "size": 28,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "JACQUEMUS": {
+      "label": "Jacquemus",
+      "template_path": "templates/JACQUEMUSS.png",
+      "output_prefix": "final/jacquemus",
+      "fields": [
+        {
+          "id": "nom",
+          "label": "Nom de l'article",
+          "placeholder": "ex: Le Bob Artichaut"
+        },
+        {
+          "id": "taille",
+          "label": "Taille",
+          "placeholder": "ex: S/M"
+        },
+        {
+          "id": "couleur",
+          "label": "Couleur",
+          "placeholder": "ex: Beige"
+        },
+        {
+          "id": "ref",
+          "label": "Référence",
+          "placeholder": "ex: 226AC253"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 75"
+        }
+      ],
+      "layers": [
+        {
+          "type": "field",
+          "field": "nom",
+          "position": {
+            "mode": "center_offset",
+            "x": -400,
+            "y": 600
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 18,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "REF : {ref}\nCouleur : {couleur}\nTaille : {taille}",
+          "position": {
+            "mode": "center_offset",
+            "x": -400,
+            "y": 621
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "Commandes : {randint:1000000000:9999999999}\nFacture : {randint:1000000000:9999999999}\nPassée le : {random_mois} {randint:1:28} {randint:2021:2023}",
+          "position": {
+            "mode": "center_offset",
+            "x": 195,
+            "y": 245
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 18,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{random_prenom} {random_prenom}\n{randint:1:200} {random_type_rue} {random_nom_rue}\nAppartement {randint:1:300}\n{random_cp_ville}\nFRANCE\nT. : 0{randint:6:7}{randint:10000000:99999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -400,
+            "y": 220
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 61,
+            "y": 643
+          },
+          "font": "calibri-font-family/LiberationSerif-Regular.ttf",
+          "size": 18,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 320,
+            "y": 643
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 18,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "€{ht:.2f}\n€{tva:.2f}\nGratuit\n€{prix}",
+          "computed_fields": {
+            "ht": "float(prix)*0.833333",
+            "tva": "float(prix)*0.16666"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 340,
+            "y": 745
+          },
+          "font": "calibri-font-family/LiberationSerif-Bold.ttf",
+          "size": 18,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "AMAZON": {
+      "label": "Amazon",
+      "template_path": "templates/amazon.png",
+      "output_prefix": "final/amazon",
+      "fields": [
+        {
+          "id": "desc",
+          "label": "Nom du produit",
+          "placeholder": "ex: Apple AirPods Pro 2ème génération"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 249"
+        },
+        {
+          "id": "asin",
+          "label": "ASIN",
+          "placeholder": "ex: B0BDJ37NF5"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -720,
+            "y": 460
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -808,
+            "y": 844
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -268,
+            "y": 844
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{random_alphanumeric_25}",
+          "position": {
+            "mode": "center_offset",
+            "x": 388,
+            "y": 280
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 26,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:10:28} {random_mois} {randint:2021:2023}\n\nFR{random_alphanumeric_7}EUI\n\n{prix_livraison} €",
+          "position": {
+            "mode": "center_offset",
+            "x": 600,
+            "y": 450
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 26,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:10:28} {random_mois} {randint:2021:2023}\n\n{randint:100:999}-{randint:1000000:9999999}-{randint:1000000:9999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -440,
+            "y": 1184
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 25,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "position": {
+            "mode": "center_offset",
+            "x": -800,
+            "y": 1520
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 25,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f} €                                                  {prix:.2f} €              {prix:.2f} €",
+          "computed_fields": {
+            "ht": "float(prix)*0.83333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 154,
+            "y": 1520
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 25,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix_total:.2f} €",
+          "computed_fields": {
+            "prix_total": "float(prix) + 7.99"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 660,
+            "y": 1690
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 38,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{tva:.2f} €\n\n\n{tva:.2f} €",
+          "computed_fields": {
+            "tva": "float(prix)*0.166666"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 720,
+            "y": 1840
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 25,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f} €\n\n\n{ht:.2f} €",
+          "computed_fields": {
+            "ht": "float(prix)*0.83333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 480,
+            "y": 1840
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 25,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "ASIN: {asin}",
+          "position": {
+            "mode": "center_offset",
+            "x": -800,
+            "y": 1560
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 26,
+          "color": [
+            123,
+            123,
+            123
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "FENDI": {
+      "label": "Fendi",
+      "template_path": "templates/fendi.png",
+      "output_prefix": "final/fendi",
+      "fields": [
+        {
+          "id": "article_num",
+          "label": "Numéro d'article",
+          "placeholder": "ex: 724665"
+        },
+        {
+          "id": "designation",
+          "label": "Désignation",
+          "placeholder": "ex: 8M025-AAIT F1A11"
+        },
+        {
+          "id": "description",
+          "label": "Description",
+          "placeholder": "ex: LWALLET/F IS FENDI"
+        },
+        {
+          "id": "taille",
+          "label": "Taille",
+          "placeholder": "ex: TU"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 620"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -675,
+            "y": 325
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 25,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:10:28}/0{randint:1:10}/{randint:2021:2023} {randint:10:17}:{randint:10:59}:{randint:10:59}\n\n{randint:10:20}{random_letter}{random_letter}{random_letter}{random_letter}{random_letter}{random_letter}\n{randint:10:20}{random_letter}{random_letter}{random_letter}{random_letter}{random_letter}{random_letter}",
+          "position": {
+            "mode": "center_offset",
+            "x": -475,
+            "y": 200
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 23,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{article_num}         {designation}         {description}",
+          "position": {
+            "mode": "center_offset",
+            "x": -675,
+            "y": 635
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 18,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{taille}                               {prix:.2f}                                              {prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 130,
+            "y": 635
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 18,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}\n\n\n{prix:.2f}\n{tva:.2f}\n{prix}",
+          "computed_fields": {
+            "tva": "float(prix)*0.166666"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 592,
+            "y": 730
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 18,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "CORTEIZ": {
+      "label": "Corteiz",
+      "template_path": "templates/cortiez.png",
+      "output_prefix": "final/cortiez",
+      "fields": [
+        {
+          "id": "sku",
+          "label": "SKU",
+          "placeholder": "ex: SMALL-WHAT-JACKER-STORM"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: STORM JACKET WHITE"
+        },
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 02/12/2024"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -525,
+            "y": 258
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 30,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{randint:100000:999999}\n{randint:100000000000:99999999999999}\n{date}\n0{randint:6:7}{randint:10000000:99999999}\nEU STANDARD SHIPPING\nEU STANDARD SHIPPING",
+          "position": {
+            "mode": "center_offset",
+            "x": 280,
+            "y": 258
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 30,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "sku",
+          "wrap_at": 40,
+          "position": {
+            "mode": "center_offset",
+            "x": -668,
+            "y": 575
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 30,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 20,
+          "position": {
+            "mode": "center_offset",
+            "x": -75,
+            "y": 575
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 30,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "qte",
+          "position": {
+            "mode": "center_offset",
+            "x": 580,
+            "y": 575
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 30,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:10000000000000000000:99999999999999999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -505,
+            "y": 730
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 25,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "Order number {randint:10000000:99999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -95,
+            "y": 2190
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 20,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "FARFETCH": {
+      "label": "Farfetch",
+      "template_path": "templates/Farfetch-1.png",
+      "output_prefix": "final/farfetch",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 11/05/2024"
+        },
+        {
+          "id": "id_far",
+          "label": "ID Farfetch",
+          "placeholder": "ex: 13582630"
+        },
+        {
+          "id": "id_marque",
+          "label": "ID Marque",
+          "placeholder": "ex: EF2905"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: adidas YEEZY Boost 350 V2"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 350"
+        },
+        {
+          "id": "compo",
+          "label": "Composition",
+          "placeholder": "ex: Coton : 100%"
+        },
+        {
+          "id": "pays",
+          "label": "Pays d'origine",
+          "placeholder": "ex: Chine"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -800,
+            "y": 950
+          },
+          "font": "calibri-font-family/calibri-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": 18,
+            "y": 950
+          },
+          "font": "calibri-font-family/calibri-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "date",
+          "position": {
+            "mode": "center_offset",
+            "x": -650,
+            "y": 572
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "IT{randint:100000000000:999999999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -640,
+            "y": 540
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "AGDENC{randint:100000000:999999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": 195,
+            "y": 571
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "0{randint:1000:9999}F{randint:100000000:999999999}F001",
+          "position": {
+            "mode": "center_offset",
+            "x": 20,
+            "y": 768
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "ITDN000{randint:10000:99999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -610,
+            "y": 605
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "NL{randint:100000000:999999999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -635,
+            "y": 637
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": -285,
+            "y": 1278
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": -8,
+            "y": 1278
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 192,
+            "y": 1278
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "compo",
+          "wrap_at": 18,
+          "position": {
+            "mode": "center_offset",
+            "x": 295,
+            "y": 1278
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{id_far} {desc} {id_marque}",
+          "wrap_at": 28,
+          "position": {
+            "mode": "center_offset",
+            "x": -800,
+            "y": 1278
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "pays",
+          "position": {
+            "mode": "center_offset",
+            "x": 515,
+            "y": 1278
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": -8,
+            "y": 1438
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 192,
+            "y": 1438
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": -285,
+            "y": 1438
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 125,
+            "y": 1650
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": -380,
+            "y": 1650
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 125,
+            "y": 1683
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": -380,
+            "y": 1683
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 28,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "AMI": {
+      "label": "AMI Paris",
+      "template_path": "templates/FactureAmi.png",
+      "output_prefix": "final/ami",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 21/10/2024"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: Sweat black/white SS22"
+        },
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "code_postale",
+          "label": "Code postal",
+          "placeholder": "ex: 75001"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 330"
+        }
+      ],
+      "layers": [
+        {
+          "type": "field",
+          "field": "date",
+          "position": {
+            "mode": "center_offset",
+            "x": -201,
+            "y": 881
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "code_postale",
+          "position": {
+            "mode": "center_offset",
+            "x": 35,
+            "y": 946
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:10:99} {randint:100:999}",
+          "position": {
+            "mode": "center_offset",
+            "x": -35,
+            "y": 980
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 27,
+          "position": {
+            "mode": "center_offset",
+            "x": -260,
+            "y": 1135
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "qte",
+          "position": {
+            "mode": "center_offset",
+            "x": 118,
+            "y": 1135
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f} €",
+          "computed_fields": {
+            "ht": "float(prix)*0.8333333333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 325,
+            "y": 1135
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f} €",
+          "computed_fields": {
+            "ht": "float(prix)*0.8333333333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 510,
+            "y": 1135
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f} €",
+          "computed_fields": {
+            "ht": "float(prix)*0.8333333333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 510,
+            "y": 1250
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{tva:.2f} €",
+          "computed_fields": {
+            "tva": "float(prix)*0.1666666666"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 510,
+            "y": 1330
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f} €",
+          "position": {
+            "mode": "center_offset",
+            "x": 510,
+            "y": 1412
+          },
+          "font": "calibri-font-family/Caladea-Regular.ttf",
+          "size": 29,
+          "color": [
+            9,
+            9,
+            9
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "GOYARD": {
+      "label": "Goyard",
+      "template_path": "templates/Goyard.png",
+      "output_prefix": "final/goyard",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 12/06/2024"
+        },
+        {
+          "id": "designation",
+          "label": "Désignation",
+          "placeholder": "ex: BELVE2PMLTY01CL01P PML"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 1450"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_text",
+          "value": "{random_prenom} {random_prenom}",
+          "position": {
+            "mode": "center_offset",
+            "x": -725,
+            "y": 490
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -725,
+            "y": 490
+          },
+          "font": "calibri-font-family/calibri-Regular.ttf",
+          "size": 32,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "date",
+          "position": {
+            "mode": "center_offset",
+            "x": 522,
+            "y": 787
+          },
+          "font": "calibri-font-family/calibri-Bold.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "date",
+          "position": {
+            "mode": "center_offset",
+            "x": -650,
+            "y": 787
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{random_prenom}",
+          "position": {
+            "mode": "center_offset",
+            "x": -408,
+            "y": 746
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:100:999} {randint:100:999}",
+          "position": {
+            "mode": "center_offset",
+            "x": 575,
+            "y": 746
+          },
+          "font": "calibri-font-family/calibri-Bold.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "designation",
+          "position": {
+            "mode": "center_offset",
+            "x": -705,
+            "y": 962
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "1                           20.00%",
+          "position": {
+            "mode": "center_offset",
+            "x": -26,
+            "y": 962
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f}",
+          "computed_fields": {
+            "ht": "float(prix)*0.8333333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 45,
+            "y": 962
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 310,
+            "y": 962
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 505,
+            "y": 962
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": -170,
+            "y": 1729
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f}",
+          "computed_fields": {
+            "ht": "float(prix)*0.8333333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 130,
+            "y": 1729
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{tva:.2f}",
+          "computed_fields": {
+            "tva": "float(prix)*0.16666666"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 373,
+            "y": 1729
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f}",
+          "computed_fields": {
+            "ht": "float(prix)*0.83333333"
+          },
+          "position": {
+            "mode": "center_offset",
+            "x": 155,
+            "y": 1913
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}\n\n\n{prix:.2f}",
+          "position": {
+            "mode": "center_offset",
+            "x": 450,
+            "y": 1913
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "LACOSTE": {
+      "label": "Lacoste",
+      "template_path": "templates/lacoste.png",
+      "output_prefix": "final/lacoste",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 02/04/2024"
+        },
+        {
+          "id": "num_et_taille_article",
+          "label": "Ref + Taille",
+          "placeholder": "ex: CHB8552-001/40"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: Chemise regular fit unie coton"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 115"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": -545,
+            "y": 625
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "center_offset",
+            "x": 168,
+            "y": 625
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "Numéro de client : LFR0{randint:1000000000:9999999999}\nNuméro de la commande : {randint:10000000:99999999}\nDate de la facture : {date}",
+          "position": {
+            "mode": "center_offset",
+            "x": -692,
+            "y": 828
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 26,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "num_et_taille_article",
+          "position": {
+            "mode": "absolute",
+            "x": 218,
+            "y": 1021
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 21,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 42,
+          "position": {
+            "mode": "absolute",
+            "x": 442,
+            "y": 1021
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 21,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f}",
+          "computed_fields": {
+            "ht": "float(prix)*0.8333333"
+          },
+          "position": {
+            "mode": "absolute",
+            "x": 1042,
+            "y": 1021
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 21,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f}",
+          "computed_fields": {
+            "ht": "float(prix)*0.8333333"
+          },
+          "position": {
+            "mode": "absolute",
+            "x": 1177,
+            "y": 1021
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 21,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f} EUR",
+          "position": {
+            "mode": "absolute",
+            "x": 1390,
+            "y": 1021
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 21,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f} EUR",
+          "position": {
+            "mode": "absolute",
+            "x": 1390,
+            "y": 1088
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 21,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "IO{randint:10000000000000000000:99999999999999999999}",
+          "position": {
+            "mode": "absolute",
+            "x": 1147,
+            "y": 1347
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 33,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "ZALANDO": {
+      "label": "Zalando",
+      "template_path": "templates/zalando.png",
+      "output_prefix": "final/zalando",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 26-nov.-2024"
+        },
+        {
+          "id": "ref",
+          "label": "Référence",
+          "placeholder": "ex: UR621T001-Q11000L000"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: The North Face RETRO NUPTSE JACKET"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 429"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "absolute",
+            "x": 139,
+            "y": 338
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 27,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "absolute",
+            "x": 427,
+            "y": 338
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 27,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{randint:100000000000:999999999999} du {date}",
+          "position": {
+            "mode": "absolute",
+            "x": 362,
+            "y": 105
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 27,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "Numéro client : {randint:100000000:999999999}\nNuméro de commande : {randint:100000000000:999999999999}\nNuméro de facture : {randint:100000000000:999999999999}\nModification du {date}\nRetour du",
+          "position": {
+            "mode": "absolute",
+            "x": 825,
+            "y": 265
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 22,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "ref",
+          "position": {
+            "mode": "absolute",
+            "x": 222,
+            "y": 750
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 22,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 20,
+          "position": {
+            "mode": "absolute",
+            "x": 460,
+            "y": 750
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 22,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f}",
+          "computed_fields": {
+            "ht": "float(prix)*0.83333"
+          },
+          "position": {
+            "mode": "absolute",
+            "x": 859,
+            "y": 750
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 22,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{tva:.2f}",
+          "computed_fields": {
+            "tva": "float(prix)*0.166666"
+          },
+          "position": {
+            "mode": "absolute",
+            "x": 993,
+            "y": 750
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 22,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{ht:.2f}",
+          "computed_fields": {
+            "ht": "float(prix)*0.83333"
+          },
+          "position": {
+            "mode": "absolute",
+            "x": 1080,
+            "y": 852
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 22,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{tva:.2f}",
+          "computed_fields": {
+            "tva": "float(prix)*0.166666"
+          },
+          "position": {
+            "mode": "absolute",
+            "x": 1090,
+            "y": 878
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 22,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "absolute",
+            "x": 1080,
+            "y": 902
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 22,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "DIOR": {
+      "label": "Dior",
+      "template_path": "templates/dior.png",
+      "output_prefix": "final/dior",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 26 février 2024 14:21"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: 424S57EM172_X0826 Homme T36 PULL"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (€)",
+          "placeholder": "ex: 890"
+        }
+      ],
+      "layers": [
+        {
+          "type": "formula",
+          "formula": "Référence Couleur Taille Description Qté Prix Total (EUR) {desc} 1 {prix} {prix:.2f}",
+          "position": {
+            "mode": "absolute",
+            "x": 158,
+            "y": 1028
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 24,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm",
+          "replace_dash_in": [
+            "desc"
+          ]
+        },
+        {
+          "type": "random_text",
+          "value": "{random_prenom}",
+          "position": {
+            "mode": "absolute",
+            "x": 356,
+            "y": 1083
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 24,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}\n\n{ht:.2f}\n\n{tva:.2f}",
+          "computed_fields": {
+            "ht": "float(prix)*0.83333",
+            "tva": "float(prix)*0.1666666"
+          },
+          "position": {
+            "mode": "absolute",
+            "x": 1418,
+            "y": 1108
+          },
+          "font": "calibri-font-family/liberationserif-bold.ttf",
+          "size": 24,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "Caissier : CVER\nTransaction : {randint:10000:99999}\nCaisse : FR{randint:100:999}C\n{date}",
+          "position": {
+            "mode": "absolute",
+            "x": 159,
+            "y": 1802
+          },
+          "font": "calibri-font-family/liberationserif-regular.ttf",
+          "size": 24,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        }
+      ]
+    },
+    "STOCKX": {
+      "label": "StockX",
+      "template_path": "templates/stockx.png",
+      "output_prefix": "final/stockx",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 2024-04-04"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: Louis Vuitton LV Trainer"
+        },
+        {
+          "id": "taille",
+          "label": "Taille",
+          "placeholder": "ex: 8.5"
+        },
+        {
+          "id": "couleur",
+          "label": "Couleur",
+          "placeholder": "ex: W/WHITE"
+        },
+        {
+          "id": "style",
+          "label": "Style Code",
+          "placeholder": "ex: 1JG9"
+        },
+        {
+          "id": "prix",
+          "label": "Prix ($)",
+          "placeholder": "ex: 400"
+        }
+      ],
+      "layers": [
+        {
+          "type": "field",
+          "field": "date",
+          "position": {
+            "mode": "absolute",
+            "x": 775,
+            "y": 167
+          },
+          "font": "calibri-font-family/MYRIADPRO-BOLD.OTF",
+          "size": 33,
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "absolute",
+            "x": 47,
+            "y": 406
+          },
+          "font": "calibri-font-family/MYRIADPRO-BOLD.OTF",
+          "size": 30,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:10000000:99999999}-{randint:10000000:99999999}",
+          "position": {
+            "mode": "absolute",
+            "x": 576,
+            "y": 445
+          },
+          "font": "calibri-font-family/MYRIADPRO-BOLD.OTF",
+          "size": 41,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "wrap_at": 28,
+          "position": {
+            "mode": "absolute",
+            "x": 48,
+            "y": 586
+          },
+          "font": "calibri-font-family/MYRIADPRO-BOLD.OTF",
+          "size": 60,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "mm"
+        },
+        {
+          "type": "formula",
+          "formula": "{taille}\n{couleur}\n{style}\nNew; 100% authentic",
+          "position": {
+            "mode": "absolute",
+            "x": 962,
+            "y": 762
+          },
+          "font": "calibri-font-family/MYRIADPRO-BOLD.OTF",
+          "size": 36,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "left",
+          "spacing": 22
+        },
+        {
+          "type": "formula",
+          "formula": "${subtotal:.2f}\n$7.39\n$15.50\n{prix:.2f}",
+          "computed_fields": {
+            "subtotal": "float(prix) - 7.39 - 13.50"
+          },
+          "position": {
+            "mode": "absolute",
+            "x": 962,
+            "y": 1128
+          },
+          "font": "calibri-font-family/MYRIADPRO-BOLD.OTF",
+          "size": 36,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "align": "left",
+          "spacing": 22
+        }
+      ]
+    },
+    "TRAPSTAR": {
+      "label": "Trapstar",
+      "template_path": "templates/trapstar.png",
+      "output_prefix": "final/trapstar",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 10/09/2024"
+        },
+        {
+          "id": "sku",
+          "label": "SKU",
+          "placeholder": "ex: 02243-OS"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: Irongate T Cross-Body Bag Black"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (£)",
+          "placeholder": "ex: 55"
+        }
+      ],
+      "layers": [
+        {
+          "type": "random_address",
+          "position": {
+            "mode": "absolute",
+            "x": 282,
+            "y": 317
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 35,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "mm",
+          "spacing": 8
+        },
+        {
+          "type": "random_text",
+          "value": "TS{randint:100000:999999}\n{date} {randint:10:17}:{randint:10:59}:{randint:10:59}",
+          "position": {
+            "mode": "absolute",
+            "x": 1147,
+            "y": 317
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 35,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "mm",
+          "spacing": 8
+        },
+        {
+          "type": "formula",
+          "formula": "{date} {randint:10:17}:{randint:10:59}:{randint:10:59}",
+          "position": {
+            "mode": "absolute",
+            "x": 1317,
+            "y": 54
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 30,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "mm",
+          "spacing": 8
+        },
+        {
+          "type": "field",
+          "field": "sku",
+          "position": {
+            "mode": "absolute",
+            "x": 120,
+            "y": 680
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 35,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "mm",
+          "spacing": 8
+        },
+        {
+          "type": "field",
+          "field": "desc",
+          "position": {
+            "mode": "absolute",
+            "x": 398,
+            "y": 680
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 35,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "mm",
+          "spacing": 8
+        },
+        {
+          "type": "formula",
+          "formula": "{prix:.2f}",
+          "position": {
+            "mode": "absolute",
+            "x": 1055,
+            "y": 680
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 35,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "mm",
+          "spacing": 8
+        },
+        {
+          "type": "formula",
+          "formula": "£{prix:.2f}",
+          "position": {
+            "mode": "absolute",
+            "x": 1430,
+            "y": 680
+          },
+          "font": "calibri-font-family/calibri-regular.ttf",
+          "size": 35,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "mm",
+          "spacing": 8
+        },
+        {
+          "type": "formula",
+          "formula": "1     £{prix:.2f}",
+          "position": {
+            "mode": "absolute",
+            "x": 1384,
+            "y": 760
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 34,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "right",
+          "spacing": 8
+        },
+        {
+          "type": "random_text",
+          "value": "{randint:1000:9999}",
+          "position": {
+            "mode": "absolute",
+            "x": 864,
+            "y": 1338
+          },
+          "font": "calibri-font-family/calibri-bold.ttf",
+          "size": 40,
+          "color": [
+            30,
+            30,
+            30
+          ],
+          "align": "mm",
+          "spacing": 8
+        }
+      ]
+    },
+    "SYNAWORLD": {
+      "label": "Synaworld",
+      "template_path": "templates/synaworld.png",
+      "output_prefix": "final/synaworld",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 01/01/2024"
+        },
+        {
+          "id": "desc",
+          "label": "Description",
+          "placeholder": "ex: CENCH TRACKSUIT"
+        },
+        {
+          "id": "qte",
+          "label": "Quantité",
+          "placeholder": "ex: 1"
+        },
+        {
+          "id": "prix",
+          "label": "Prix (£)",
+          "placeholder": "ex: 120"
+        }
+      ],
+      "layers": []
+    },
+    "APPLE": {
+      "label": "Apple",
+      "template_path": "templates/apple_template.png",
+      "output_prefix": "final/apple",
+      "fields": [
+        {
+          "id": "desc",
+          "label": "Description du produit",
+          "placeholder": "ex: AirPods Pro 2eme generation"
+        },
+        {
+          "id": "prix",
+          "label": "Prix TTC",
+          "placeholder": "ex: 330"
+        },
+        {
+          "id": "date",
+          "label": "Date",
+          "placeholder": "ex: 09/08/2023"
+        }
+      ]
+    }
+  }
